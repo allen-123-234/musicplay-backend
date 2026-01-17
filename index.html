@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>MusicPlay</title>
-  <link rel="stylesheet" href="style.css">
+  <title>音樂網站</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #login-form, #register-form { margin-bottom: 20px; }
+    input { margin: 5px; }
+    button { margin: 5px; }
+  </style>
 </head>
 <body>
+  <h1>音樂網站</h1>
 
-  <h1>🎵 MusicPlay 歌曲列表</h1>
+  <div id="login-form">
+    <h2>登入</h2>
+    <input type="text" id="login-username" placeholder="帳號">
+    <input type="password" id="login-password" placeholder="密碼">
+    <button id="login-btn">登入</button>
+    <p id="login-msg"></p>
+  </div>
+
+  <div id="register-form">
+    <h2>註冊</h2>
+    <input type="text" id="register-username" placeholder="帳號">
+    <input type="password" id="register-password" placeholder="密碼">
+    <button id="register-btn">註冊</button>
+    <p id="register-msg"></p>
+  </div>
+
+  <h2>歌曲列表</h2>
   <ul id="song-list"></ul>
 
   <script src="script.js"></script>
