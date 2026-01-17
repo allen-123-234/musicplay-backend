@@ -1,6 +1,6 @@
 const songList = document.getElementById("song-list")
 
-fetch("http://localhost:3000/api/songs")
+fetch("https://musicplay-backend.onrender.com/api/songs")
   .then(res => res.json())
   .then(songs => {
     songs.forEach(song => {
